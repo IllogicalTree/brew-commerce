@@ -1,25 +1,29 @@
-### Sprint 3 - Team 4 - Punk API ###
+# vue-team-4
 
-* Vue.js app
-* Version 0.0.1
+## Project setup
+```
+npm install
+```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-### How do I get set up? ###
+### Compiles and minifies for production
+```
+npm run build
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Run your unit tests
+```
+npm run test:unit
+```
 
-### Contribution guidelines ###
+### Lints and fixes files
+```
+npm run lint
+```
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

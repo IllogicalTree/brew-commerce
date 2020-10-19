@@ -1,0 +1,7 @@
+applications:
+- name: vuejs
+ path: ./dist
+ buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+ random-route: false
+ memory: 256M
+ FORCE_HTTPS: true
