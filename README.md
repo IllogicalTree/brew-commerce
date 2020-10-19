@@ -1,12 +1,8 @@
-# README #
+### Sprint 3 - Team 4 - Punk API ###
 
-This README would normally document whatever steps are necessary to get your application up and running.
+* Vue.js app
+* Version 0.0.1
 
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### How do I get set up? ###
 
