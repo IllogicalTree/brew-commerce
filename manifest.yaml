@@ -1,5 +1,5 @@
 applications:
-- name: vue-team-4
+- name: punkapi-s3t4
   path: ./dist
   buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
   random-route: false
