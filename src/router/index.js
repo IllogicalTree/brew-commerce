@@ -21,7 +21,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  //mode: 'history', History mode not working on cloudant
+  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
