@@ -4,7 +4,6 @@
             <v-col style='background: lime' justify="center">
                 <b>{{beer.name}}</b>
                 <p>{{beer.tagline}}</p>
-                {{beer}}
             </v-col>
             <v-col style='background: blue' justify="center">
                 <v-img max-width='2rem' :src='beer.image_url'></v-img>
