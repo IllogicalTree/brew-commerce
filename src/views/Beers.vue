@@ -1,9 +1,11 @@
 <template>
-  <div>
-    <div v-for='beer in beers' :key='beer.name'>
-      <Beer :beer='beer'/>
-    </div>
-  </div>
+  <v-container>
+    <v-layout row wrap>
+      <v-flex xs4 v-for='beer in beers' :key='beer.id'>
+        <Beer :beer='beer'/>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
