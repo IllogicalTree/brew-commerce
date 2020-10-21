@@ -16,6 +16,9 @@ export default {
   components: {
     Beer
   },
-  computed: mapState(['beers'])
+  computed: mapState(['beers']),
+  mounted() {
+    this.$store.dispatch('getBeers')
+  }
 }
 </script>
