@@ -18,9 +18,21 @@ export default {
   components: {
     Beer
   },
+  methods: {
+    //https://www.digitalocean.com/community/tutorials/vuejs-implementing-infinite-scroll
+    loadBeersOnScroll() {
+      window.onscroll = () => {
+        let bottomOfWindow = Math.ceil(document.documentElement.scrollTop) + window.innerHeight === document.documentElement.offsetHeight;
+        if (bottomOfWindow) {
+          this.$store.dispatch('getBeers')
+        }
+      }
+    }
+  },
   computed: mapState(['beers']),
   mounted() {
     this.$store.dispatch('getBeers')
+    this.loadBeersOnScroll();
   }
 }
 </script>
