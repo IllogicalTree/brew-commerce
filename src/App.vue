@@ -23,17 +23,17 @@
 
       <v-spacer></v-spacer>
       
-      <v-btn to="/" target="_blank" text>
+      <v-btn to="/" text>
         <span class="mr-2">Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/beers" target="_blank" text>
+      <v-btn to="/beers" text>
         <span class="mr-2">Products</span>
         <v-icon>mdi-beer</v-icon>
       </v-btn>
 
-      <v-btn to="/cart" target="_blank" text>
+      <v-btn to="/cart" text>
         <span class="mr-2">View Cart</span>
         <v-icon>mdi-cart-outline</v-icon>
       </v-btn>
