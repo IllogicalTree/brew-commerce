@@ -1,22 +1,18 @@
 <template>
   <v-app id="app">
-    <v-app-bar
-      app
-      color="grey darken-3"
-      dark
-    >
+    <v-app-bar app color="grey darken-3" dark>
       <div class="d-flex align-center">
-        <v-img
+        <!-- <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
           width="40"
-        />
+        /> -->
 
         <v-img
-          alt="Vuetify Name"
+          alt=""
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
@@ -27,20 +23,12 @@
 
       <v-spacer></v-spacer>
 
-       <v-btn
-        href=""
-        target="_blank"
-        text
-      >
+      <v-btn href="" target="_blank" text>
         <span class="mr-2">Products</span>
         <v-icon>mdi-beer</v-icon>
       </v-btn>
 
-      <v-btn
-        href=""
-        target="Beers"
-        text
-      >
+      <v-btn href="" target="Beers" text>
         <span class="mr-2">View Cart</span>
         <v-icon>mdi-cart-outline</v-icon>
       </v-btn>
@@ -49,8 +37,8 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/beers">Beers</router-link>
     </div>
-    
-    <v-main> <router-view>  <router-view/>  </v-main> 
+
+    <!-- <v-main> <router-view>  <router-view/>  </v-main>  -->
   </v-app>
 </template>
 
