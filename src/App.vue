@@ -37,12 +37,14 @@
         <v-icon>mdi-cart-outline</v-icon>
       </v-btn>
     </v-app-bar>
-    <div id="nav">
+    
+
+    <v-main> 
+      <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/beers">Beers</router-link>
-    </div>
-
-    <v-main> <router-view>  <router-view/>  </v-main> 
+    </div><router-view>  <router-view/>  
+    </v-main> 
   </v-app>
 </template>
 
