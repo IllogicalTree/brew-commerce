@@ -4,7 +4,7 @@
             <v-col style='background: lime' justify="center">
                 <b>{{beer.id}} - {{beer.name}}</b>
                 <p>{{beer.tagline}}</p>
-                <p>{{beer.abv}}</p> 
+                <b>{{beer.abv}} %ABV</b> 
                 <v-btn id="addToCart" large outlined color="orange" dark>Add to cart </v-btn>
             </v-col>
             <v-col style='background: blue' justify="center">
