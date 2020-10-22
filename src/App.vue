@@ -22,17 +22,18 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn href="" target="_blank" text>
+      
+      <v-btn to="/" target="_blank" text>
         <span class="mr-2">Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn href="" target="_blank" text>
+      <v-btn to="/beers" target="_blank" text>
         <span class="mr-2">Products</span>
         <v-icon>mdi-beer</v-icon>
       </v-btn>
 
-      <v-btn href="" target="Beers" text>
+      <v-btn to="/cart" target="_blank" text>
         <span class="mr-2">View Cart</span>
         <v-icon>mdi-cart-outline</v-icon>
       </v-btn>
@@ -43,7 +44,8 @@
       <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/beers">Beers</router-link>
-    </div><router-view>  <router-view/>  
+    </div>
+    <router-view>  <router-view/>  
     </v-main> 
   </v-app>
 </template>
