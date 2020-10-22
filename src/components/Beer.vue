@@ -18,10 +18,3 @@ export default {
   props: ['beer']
 }
 </script>
-
-
-<script>
-export default {
-    props: ['beer']
-}
-</script>
