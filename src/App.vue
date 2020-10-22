@@ -22,6 +22,10 @@
       </div>
 
       <v-spacer></v-spacer>
+      <v-btn href="" target="_blank" text>
+        <span class="mr-2">Home</span>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
 
       <v-btn href="" target="_blank" text>
         <span class="mr-2">Products</span>
@@ -38,7 +42,7 @@
       <router-link to="/beers">Beers</router-link>
     </div>
 
-    <!-- <v-main> <router-view>  <router-view/>  </v-main>  -->
+    <v-main> <router-view>  <router-view/>  </v-main> 
   </v-app>
 </template>
 
