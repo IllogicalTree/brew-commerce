@@ -16,7 +16,7 @@
           class="shrink mt-1 hidden-sm-and-down"
           contain
           min-width="100"
-          src="../assets/logo.png"
+          src="@/assets/logo.png"
           width="100"
         />
       </div>
