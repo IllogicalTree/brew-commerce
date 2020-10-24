@@ -23,6 +23,9 @@ export default new Vuex.Store({
         if (state.cart[index].quantity > 0) {
           state.cart[index].quantity += quantity
         }
+        if (state.cart[index].quantity == 0) {
+          state.cart.splice(index, 1);
+        }
       } else {
         state.cart = state.cart.concat({
           ...beer,
