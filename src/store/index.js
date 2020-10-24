@@ -9,6 +9,7 @@ export default new Vuex.Store({
     page: 1,
     beers: [],
     cart: [],
+    cartItems: 0,
   },
   mutations: {
     incrementPage (state) {
@@ -25,6 +26,7 @@ export default new Vuex.Store({
         let index = state.cart.indexOf(beerInCart)
         if (state.cart[index].quantity > 0) {
           state.cart[index].quantity += quantity
+          state.cartItems += quantity
         }
         if (state.cart[index].quantity == 0) {
           state.cart.splice(index, 1);
@@ -34,6 +36,7 @@ export default new Vuex.Store({
           ...beer,
           quantity
         })
+        state.cartItems += quantity
       }
     },
   },
