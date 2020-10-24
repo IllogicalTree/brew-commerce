@@ -14,13 +14,15 @@ export default new Vuex.Store({
     addBeers (state, beers) {
       state.beers = state.beers.concat(beers)
     },
-    addToCart (state, payload) {
+    modifyCart (state, payload) {
       let beer = payload.beer
       let quantity = payload.quantity
       let beerInCart = state.cart.find(prod => prod.id == beer.id)
       if (beerInCart) {
         let index = state.cart.indexOf(beerInCart)
-        state.cart[index].quantity += quantity
+        if (state.cart[index].quantity > 0) {
+          state.cart[index].quantity += quantity
+        }
       } else {
         state.cart = state.cart.concat({
           ...beer,
@@ -28,9 +30,6 @@ export default new Vuex.Store({
         })
       }
     },
-    removeFromCart (state, beer, quantity) {
-      console.log('REMOVE', beer.name, quantity)
-    }
   },
   actions: {
     getBeers ({commit}) {
@@ -44,7 +43,11 @@ export default new Vuex.Store({
         .catch(error => console.log(error))
     },
     addToCart ({commit}, beer) {
-      commit('addToCart', beer)
+      commit('modifyCart', beer)
+    },
+    removeFromCart ({commit}, beer) {
+      beer.quantity = -beer.quantity
+      commit('modifyCart', beer)
     }
   },
   modules: {
