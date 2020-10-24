@@ -11,9 +11,6 @@ export default new Vuex.Store({
     cart: [],
   },
   mutations: {
-    setBeers (state, beers) {
-      state.beers = beers
-    },
     addBeers (state, beers) {
       state.beers = state.beers.concat(beers)
     },
