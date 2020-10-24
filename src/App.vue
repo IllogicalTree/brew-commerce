@@ -26,7 +26,7 @@
       </v-btn>
 
       <v-btn to="/cart" text>
-        <span class="mr-2">View Cart</span>
+        <span class="mr-2">View Cart ({{cartItems}})</span>
         <v-icon>mdi-cart-outline</v-icon>
       </v-btn>
     </v-app-bar>
@@ -50,5 +50,13 @@
   text-align: center;
   color: #2c3e50;
 }
-
 </style>
+
+<script>
+import { mapState } from 'vuex' 
+
+export default {
+  name: 'App',
+  computed: mapState(['cartItems']),
+}
+</script>
