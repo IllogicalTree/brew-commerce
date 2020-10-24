@@ -33,6 +33,9 @@ export default {
   mounted() {
     this.$store.dispatch('getBeers')
     this.loadBeersOnScroll();
+  },
+  beforeDestroy() {
+    window.onscroll = null
   }
 }
 </script>
