@@ -11,6 +11,9 @@ export default new Vuex.Store({
     cart: [],
   },
   mutations: {
+    incrementPage (state) {
+      state.page++
+    },
     addBeers (state, beers) {
       state.beers = state.beers.concat(beers)
     },
@@ -40,7 +43,7 @@ export default new Vuex.Store({
         .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}`)
         .then(resp => resp.data)
         .then(beers => {
-          this.state.page ++;
+          commit('incrementPage')
           commit('addBeers', beers)
         })
         .catch(error => console.log(error))
