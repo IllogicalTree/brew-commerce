@@ -1,8 +1,9 @@
 <template>
   <v-container>
     <v-layout column>
-      <v-flex xs4 v-for='beer in beers' :key='beer.id'>
+      <v-flex xs4 v-for='beer in cart' :key='beer.id'>
         <Beer :beer='beer'/>
+        {{beer.quantity}}
       </v-flex>
     </v-layout>
   </v-container>
@@ -18,6 +19,6 @@ export default {
   components: {
     Beer
   },
-  computed: mapState(['beers']),
+  computed: mapState(['cart']),
 }
 </script>
