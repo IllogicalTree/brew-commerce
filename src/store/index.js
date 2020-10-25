@@ -32,11 +32,13 @@ export default new Vuex.Store({
           state.cart.splice(index, 1);
         }
       } else {
-        state.cart = state.cart.concat({
-          ...beer,
-          quantity
-        })
-        state.cartItems += quantity
+        if (quantity > 0) {
+          state.cart = state.cart.concat({
+            ...beer,
+            quantity
+          })
+          state.cartItems += quantity
+        }
       }
     },
   },
