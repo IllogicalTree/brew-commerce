@@ -31,8 +31,13 @@ export default {
   },
   computed: mapState(['beers']),
   mounted() {
-    this.$store.dispatch('getBeers')
+    if (!this.$store.state.beers.length > 0) {
+      this.$store.dispatch('getBeers')
+    }
     this.loadBeersOnScroll();
+  },
+  created() {
+
   },
   beforeDestroy() {
     window.onscroll = null
