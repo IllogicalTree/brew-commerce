@@ -13,7 +13,9 @@
                 <v-btn id="removeFromCart" medium outlined color="rgb(250, 105, 95)" dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
             </v-col>
             <v-col style='background: rgb(21,22,22)' justify="center">
+                <router-link :to='beerLink'>
                 <v-img max-width='2rem' :src='beer.image_url'></v-img>
+                </router-link>
             </v-col>
         </v-row>
     </v-container>
@@ -29,6 +31,12 @@ export default {
     },
     removeFromCart(beer, quantity) {
         this.$store.dispatch('removeFromCart', {beer: beer, quantity: quantity})
+    }
+  },
+  // TODO: Not happy with this solution, shouldn't need to create a computed prop for this
+  computed: {
+    beerLink() {
+        return '/beer/' + this.beer.id
     }
   }
 }
