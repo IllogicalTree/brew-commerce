@@ -1,5 +1,5 @@
 <template>
-    <v-container style='background: pink'>
+    <v-container style='background: rgb(26, 27, 27)'>
         <v-row style='background: red'>
             <v-col style='background: rgb(31, 32, 32)' justify="center">
                 <b>{{beer.id}} - {{beer.name}}</b>
