@@ -17,6 +17,8 @@ export default {
     }
   },
   mounted() {
+    // TODO: Big changes required here.. new beer added to state every time beer page viewed.. *facepalm*
+    // Will probably change my approach and not use state for this and instead call api directly here? 
     this.$store.dispatch('getBeer', {id: this.$route.params.id})
     // TODO: Fix this horrible hardcoded wait to allow the dispatch to do its thing
     setTimeout(() => {
