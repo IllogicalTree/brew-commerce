@@ -5,7 +5,6 @@
     <p>{{beer.description}}</p>
     <br>
     <p>{{beer}}</p>
-
   </v-container>
 </template>
 
@@ -18,7 +17,11 @@ export default {
     }
   },
   mounted() {
-    this.beer = this.$store.state.beers.find(beer => beer.id == this.$route.params.id)
-  }
+    this.$store.dispatch('getBeer', {id: this.$route.params.id})
+    // TODO: Fix this horrible hardcoded wait to allow the dispatch to do its thing
+    setTimeout(() => {
+        this.beer = this.$store.state.beers.find(beer => beer.id == this.$route.params.id)
+    }, 100)
+  },
 }
 </script>
