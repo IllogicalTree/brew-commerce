@@ -2,7 +2,7 @@
     <v-container style='background: rgb(26, 27, 27)'>
         <v-row style='background: red'>
             <v-col style='background: rgb(31, 32, 32)' justify="center">
-                <b>{{beer.id}} - {{beer.name}}</b>
+                <b style = 'color: rgb(217, 219, 217)'>{{beer.id}} - {{beer.name}}</b>
                 <p>{{beer.tagline}}</p>
                 <b>{{beer.abv}} %ABV</b> <br>
                 <v-btn id="addToCart" medium outlined color="rgb(88, 245, 91)" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
