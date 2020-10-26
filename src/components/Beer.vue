@@ -8,6 +8,8 @@
                     <br>
                     <br>
                 <v-btn id="addToCart" medium outlined color="rgb(88, 245, 91)" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
+                    <br>
+                    <br>
                 <v-btn id="removeFromCart" medium outlined color="rgb(250, 105, 95)" dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
             </v-col>
             <v-col style='background: rgb(21,22,22)' justify="center">
