@@ -1,7 +1,7 @@
 <template>
     <v-container style='background: pink'>
         <v-row style='background: red'>
-            <v-col style='background: lime' justify="center">
+            <v-col style='background: rgb(31, 32, 32)' justify="center">
                 <b>{{beer.id}} - {{beer.name}}</b>
                 <p>{{beer.tagline}}</p>
                 <b>{{beer.abv}} %ABV</b> <br>
