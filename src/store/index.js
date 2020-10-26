@@ -53,6 +53,15 @@ export default new Vuex.Store({
         })
         .catch(error => console.log(error))
     },
+    getBeer ({commit}, obj) {
+      axios
+        .get(`https://api.punkapi.com/v2/beers/${obj.id}`)
+        .then(resp => resp.data)
+        .then(beer => {
+          commit('addBeers', beer)
+        })
+        .catch(error => console.log(error))
+    },
     addToCart ({commit}, beer) {
       commit('modifyCart', beer)
     },
