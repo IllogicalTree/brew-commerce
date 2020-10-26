@@ -8,7 +8,7 @@
                 <v-btn id="addToCart" medium outlined color="orange" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
                 <v-btn id="removeFromCart" medium outlined color="orange" dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
             </v-col>
-            <v-col style='background: blue' justify="center">
+            <v-col style='background: rgb(21,22,22)' justify="center">
                 <v-img max-width='2rem' :src='beer.image_url'></v-img>
             </v-col>
         </v-row>
