@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Beers from '../views/Beers.vue'
 import Cart from '../views/Cart.vue'
+import Beer from '../views/Beer.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/cart',
     name: 'Cart',
     component: Cart
+  },
+  {
+    path: '/beer/:id',
+    component: Beer,
+    props: true
   }
 ]
 
