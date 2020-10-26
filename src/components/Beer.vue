@@ -1,10 +1,10 @@
 <template>
-    <v-container style='background: rgb(26, 27, 27)'>
-        <v-row style='background: red'>
-            <v-col style='background: rgb(31, 32, 32)' justify="center">
-                <b style = 'color: rgb(217, 219, 217)'>{{beer.id}} - {{beer.name}}</b>
-                <p style = 'color: rgb(187, 191, 187)'>{{beer.tagline}}</p>
-                <b style = 'color: rgb(187, 191, 187)'>{{beer.abv}} %ABV</b> 
+    <v-container class = "vContainer">
+        <v-row>
+            <v-col class = "vCol">
+                <b class = "beerName">{{beer.id}} - {{beer.name}}</b>
+                <p class = "beerDesc">{{beer.tagline}}</p>
+                <b class = "beerABV">{{beer.abv}} %ABV</b> 
                     <br>
                     <br>
                 <v-btn id="addToCart" medium outlined color="rgb(88, 245, 91)" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
@@ -12,7 +12,7 @@
                     <br>
                 <v-btn id="removeFromCart" medium outlined color="rgb(250, 105, 95)" dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
             </v-col>
-            <v-col style='background: rgb(21,22,22)' justify="center">
+            <v-col class = "beerBG" justify="center">
                 <router-link :to='beerLink'>
                 <v-img max-width='2rem' :src='beer.image_url'></v-img>
                 </router-link>
@@ -41,3 +41,31 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.vContainer {
+    background: rgb(26, 27, 27);
+}
+
+.vCol {
+    background: rgb(31, 32, 32);
+}
+
+.beerName {
+    color: rgb(237, 237, 237);
+}
+
+.beerDesc {
+    color: rgb(187, 191, 187);
+}
+
+.beerABV {
+    color: rgb(187, 191, 187);
+}
+
+.beerBG {
+    background: rgb(21,22,22);
+}
+
+</style>
