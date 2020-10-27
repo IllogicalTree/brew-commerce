@@ -1,5 +1,14 @@
 <template>
   <v-container>
+    <v-row>
+      <p>ABV {{abv}}</p>
+      <v-range-slider
+          v-model='abv'
+          max='60'
+          min='0'
+      ></v-range-slider>
+      <v-btn @click='setFilters()'>Apply Filters</v-btn>
+    </v-row>
     <v-layout row wrap>
       <v-flex xs4 v-for='beer in beers' :key='beer.id'>
         <Beer :beer='beer'/>
@@ -27,6 +36,12 @@ export default {
           this.$store.dispatch('getBeers')
         }
       }
+    },
+    setFilters() {
+      this.$store.dispatch('setFilters', {
+        minABV: this.abv[0],
+        maxABV: this.abv[1]
+      })
     }
   },
   computed: mapState(['beers']),
@@ -41,6 +56,11 @@ export default {
   },
   beforeDestroy() {
     window.onscroll = null
+  },
+  data: function() {
+    return {
+      abv: [0, 60],
+    }
   }
 }
 </script>
