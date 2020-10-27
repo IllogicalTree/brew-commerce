@@ -48,6 +48,9 @@ export default new Vuex.Store({
   },
   actions: {
     getBeers ({commit}, filterString) {
+      if (!filterString) {
+        filterString = ''
+      }
       axios
         .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}${filterString}`)
         .then(resp => resp.data)
