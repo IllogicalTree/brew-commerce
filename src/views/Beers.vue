@@ -6,20 +6,22 @@
           v-model='abv'
           max='60'
           min='0'
+          @change='setFilters()'
       ></v-range-slider>
       <p>IBU</p>
       <v-range-slider
           v-model='ibu'
           max='100'
           min='0'
+          @change='setFilters()'
       ></v-range-slider>
       <p>EBC</p>
       <v-range-slider
           v-model='ebc'
           max='100'
           min='0'
+          @change='setFilters()'
       ></v-range-slider>
-      <v-btn @click='setFilters()'>Apply Filters</v-btn>
     </v-row>
     <v-layout row wrap>
       <v-flex xs4 v-for='beer in beers' :key='beer.id'>
