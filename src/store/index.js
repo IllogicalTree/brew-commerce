@@ -18,6 +18,10 @@ export default new Vuex.Store({
     addBeers (state, beers) {
       state.beers = state.beers.concat(beers)
     },
+    clearBeers (state) {
+      state.beers = []
+      state.page = 1
+    },
     modifyCart (state, payload) {
       let beer = payload.beer
       let quantity = payload.quantity
@@ -43,9 +47,9 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    getBeers ({commit}) {
+    getBeers ({commit}, filterString) {
       axios
-        .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}`)
+        .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}${filterString}`)
         .then(resp => resp.data)
         .then(beers => {
           commit('incrementPage')
@@ -68,6 +72,11 @@ export default new Vuex.Store({
     removeFromCart ({commit}, beer) {
       beer.quantity = -beer.quantity
       commit('modifyCart', beer)
+    },
+    setFilters ({commit, dispatch}, filters) {
+      commit('clearBeers')
+      let filterString = `&abv_gt=${filters.minABV}&abv_lt=${filters.maxABV}`
+      dispatch('getBeers', filterString)
     }
   },
   modules: {
