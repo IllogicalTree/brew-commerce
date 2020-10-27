@@ -5,6 +5,7 @@
     <p>{{beer.description}}</p>
     <br>
     <p>{{beer}}</p>
+    <v-btn @click='$router.go(-1)'>Go back</v-btn>
   </v-container>
 </template>
 
