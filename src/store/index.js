@@ -78,7 +78,7 @@ export default new Vuex.Store({
     },
     setFilters ({commit, dispatch}, filters) {
       commit('clearBeers')
-      let filterString = `&abv_gt=${filters.minABV}&abv_lt=${filters.maxABV}`
+      let filterString = `&abv_gt=${filters.abv_gt}&abv_lt=${filters.abv_lt}&ibu_gt=${filters.ibu_gt}&ibu_lt=${filters.ibu_lt}&ebc_gt=${filters.ebc_gt}&ebc_lt=${filters.ebc_lt}`
       dispatch('getBeers', filterString)
     }
   },

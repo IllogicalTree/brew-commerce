@@ -1,10 +1,22 @@
 <template>
   <v-container>
     <v-row>
-      <p>ABV {{abv}}</p>
+      <p>ABV</p>
       <v-range-slider
           v-model='abv'
           max='60'
+          min='0'
+      ></v-range-slider>
+      <p>IBU</p>
+      <v-range-slider
+          v-model='ibu'
+          max='100'
+          min='0'
+      ></v-range-slider>
+      <p>EBC</p>
+      <v-range-slider
+          v-model='ebc'
+          max='100'
           min='0'
       ></v-range-slider>
       <v-btn @click='setFilters()'>Apply Filters</v-btn>
@@ -39,8 +51,13 @@ export default {
     },
     setFilters() {
       this.$store.dispatch('setFilters', {
-        minABV: this.abv[0],
-        maxABV: this.abv[1]
+        abv_gt: this.abv[0],
+        abv_lt: this.abv[1],
+        ibu_gt: this.ibu[0],
+        ibu_lt: this.ibu[1],
+        ebc_gt: this.ebc[0],
+        ebc_lt: this.ebc[1],
+
       })
     }
   },
@@ -60,6 +77,8 @@ export default {
   data: function() {
     return {
       abv: [0, 60],
+      ibu: [0, 100],
+      ebc: [0, 100]
     }
   }
 }
