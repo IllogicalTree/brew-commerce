@@ -5,6 +5,10 @@
                 <b class = "beerName">{{beer.id}} - {{beer.name}}</b>
                 <p class = "beerDesc">{{beer.tagline}}</p>
                 <b class = "beerABV">{{beer.abv}} %ABV</b> 
+                <br>
+                <b class = "beerABV">{{beer.ibu}} IBU</b> 
+                <br>
+                <b class = "beerABV">{{beer.ebc}} EBC</b> 
                     <br>
                     <br>
                 <v-btn id="addToCart" medium outlined color="rgb(88, 245, 91)" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
