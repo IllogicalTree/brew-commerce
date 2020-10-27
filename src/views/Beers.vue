@@ -1,27 +1,39 @@
 <template>
   <v-container>
     <v-row>
-      <p>ABV</p>
-      <v-range-slider
-          v-model='abv'
-          max='60'
-          min='0'
-          @change='setFilters()'
-      ></v-range-slider>
-      <p>IBU</p>
-      <v-range-slider
-          v-model='ibu'
-          max='100'
-          min='0'
-          @change='setFilters()'
-      ></v-range-slider>
-      <p>EBC</p>
-      <v-range-slider
-          v-model='ebc'
-          max='100'
-          min='0'
-          @change='setFilters()'
-      ></v-range-slider>
+      <v-col>
+        <p>ABV</p>
+        <v-range-slider
+            v-model='abv'
+            max='60'
+            min='0'
+            thumb-label
+            @change='setFilters()'
+        ></v-range-slider>
+      </v-col>
+      
+      <v-col>
+        <p>IBU</p>
+        <v-range-slider
+            v-model='ibu'
+            max='100'
+            min='0'
+            thumb-label
+            @change='setFilters()'
+        ></v-range-slider>
+      </v-col>
+      
+      <v-col>
+        <p>EBC</p>
+        <v-range-slider
+            v-model='ebc'
+            max='100'
+            min='0'
+            thumb-label
+            @change='setFilters()'
+        ></v-range-slider>
+      </v-col>
+      
     </v-row>
     <v-layout row wrap>
       <v-flex xs4 v-for='beer in beers' :key='beer.id'>
