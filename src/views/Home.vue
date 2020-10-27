@@ -5,8 +5,6 @@
       <HeroImage />
     </div>
 
-    <!-- <h1>Lots of beer here!</h1>
-    <p>Tasty, tasy beer.</p> -->
     <div>
       <v-carousel
         cycle
@@ -38,6 +36,7 @@ export default {
   components: {
     HeroImage,
   },
+
   data() {
     return {
       colors: [

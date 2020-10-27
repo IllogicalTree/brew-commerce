@@ -8,20 +8,24 @@
         >Buy More Beer
       </v-btn>
       <p></p>
-      <v-btn to="/cart" id="view" x-large outlined color="orange" dark>View Cart </v-btn>
+      <v-btn to="/cart" id="view" x-large outlined color="orange" dark
+        >View Cart ({{ cartItems }})
+      </v-btn>
     </div>
   </div>
 </template>
   
   <script>
+import { mapState } from "vuex";
 export default {
   name: "HeroImage",
+  computed: mapState(["cartItems"]),
 };
 </script>
 
 <style scoped>
 /* The hero image */
->>>.hero-image {
+>>> .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./../assets/heroimage.jpg");
@@ -37,7 +41,7 @@ export default {
 }
 
 /* Place text in the middle of the image */
->>>.hero-text {
+>>> .hero-text {
   text-align: center;
   position: absolute;
   top: 50%;
