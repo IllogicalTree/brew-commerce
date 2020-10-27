@@ -1,35 +1,16 @@
 <template>
   <v-app id="app">
-    <v-app-bar app color="grey darken-3" dark>
-      <div class="d-flex align-center">
+    
+    <!-- 
+      This is a fun one.. so the app bar emits a event named toggle-drawer when the button is clicked
+      I toggle the drawer property of the ref named drawer which just refers to the drawer within the data() inside the nav component..
+      Might be one better explain in a meeting..
 
-        <v-img
-          alt=""
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="@/assets/logo.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-      
-      <v-btn to="/" text>
-        <span class="mr-2">Home</span>
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
-      <v-btn to="/beers" text>
-        <span class="mr-2">Products</span>
-        <v-icon>mdi-beer</v-icon>
-      </v-btn>
-
-      <v-btn to="/cart" text>
-        <span class="mr-2">View Cart ({{cartItems}})</span>
-        <v-icon>mdi-cart-outline</v-icon>
-      </v-btn>
-    </v-app-bar>
+      Alternatively I could have just done this in the global store, 
+      I chose not to because no other components need access to this
+    -->
+    <AppBar @toggle-drawer='$refs.drawer.drawer = !$refs.drawer.drawer'/>
+    <NavigationDrawer ref='drawer'/>
     
     <v-main> 
       <router-view/>  
@@ -53,10 +34,14 @@
 </style>
 
 <script>
-import { mapState } from 'vuex' 
+import NavigationDrawer from './components/NavigationDrawer.vue'
+import AppBar from './components/AppBar.vue'
 
 export default {
   name: 'App',
-  computed: mapState(['cartItems']),
+  components: {
+    NavigationDrawer,
+    AppBar
+  }
 }
 </script>
