@@ -10,6 +10,7 @@ export default new Vuex.Store({
     beers: [],
     cart: [],
     cartItems: 0,
+    filterString: ''
   },
   mutations: {
     incrementPage (state) {
@@ -21,6 +22,9 @@ export default new Vuex.Store({
     clearBeers (state) {
       state.beers = []
       state.page = 1
+    },
+    setFilterString(state, filterString) {
+      state.filterString = filterString
     },
     modifyCart (state, payload) {
       let beer = payload.beer
@@ -49,7 +53,7 @@ export default new Vuex.Store({
   actions: {
     getBeers ({commit}, filterString) {
       if (!filterString) {
-        filterString = ''
+        filterString = this.state.filterString
       }
       axios
         .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}${filterString}`)
@@ -79,6 +83,7 @@ export default new Vuex.Store({
     setFilters ({commit, dispatch}, filters) {
       commit('clearBeers')
       let filterString = `&abv_gt=${filters.abv_gt}&abv_lt=${filters.abv_lt}&ibu_gt=${filters.ibu_gt}&ibu_lt=${filters.ibu_lt}&ebc_gt=${filters.ebc_gt}&ebc_lt=${filters.ebc_lt}`
+      commit('setFilterString', filterString)
       dispatch('getBeers', filterString)
     }
   },
