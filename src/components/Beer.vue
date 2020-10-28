@@ -54,6 +54,7 @@ export default {
 }
 
 .vCol {
+    height: 35vh;
     background: rgb(31, 32, 32);
 }
 
