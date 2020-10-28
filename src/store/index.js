@@ -10,7 +10,8 @@ export default new Vuex.Store({
     beers: [],
     cart: [],
     cartItems: 0,
-    filterString: ''
+    filterString: '',
+    randomBeers: [{id: "1", name: "beer1"},{id: "2", name: "beer2"},{id: "3", name: "beer3"}]
   },
   mutations: {
     incrementPage (state) {
