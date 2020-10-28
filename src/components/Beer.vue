@@ -18,7 +18,7 @@
             </v-col>
             <v-col class = "beerBG" justify="center">
                 <router-link :to='beerLink'>
-                <v-img max-width='2rem' :src='beer.image_url'></v-img>
+                <v-img class = "beerIMG" :src='beer.image_url'></v-img>
                 </router-link>
             </v-col>
         </v-row>
@@ -72,6 +72,10 @@ export default {
 
 .beerBG {
     background: rgb(21,22,22);
+}
+
+.beerIMG{
+    max-width: 2rem;
 }
 
 </style>
