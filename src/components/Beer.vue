@@ -75,6 +75,8 @@ export default {
 }
 
 .beerIMG{
+    top: 3vh;
+    left: 10vh;
     max-width: 4rem;
 }
 
