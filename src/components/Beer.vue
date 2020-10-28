@@ -75,7 +75,7 @@ export default {
 }
 
 .beerIMG{
-    max-width: 2rem;
+    max-width: 4rem;
 }
 
 </style>
