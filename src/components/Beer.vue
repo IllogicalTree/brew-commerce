@@ -49,6 +49,7 @@ export default {
 <style scoped>
 
 .vContainer {
+    height: 50vh;
     background: rgb(26, 27, 27);
 }
 
