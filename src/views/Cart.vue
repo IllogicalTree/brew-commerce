@@ -30,10 +30,11 @@ export default {
 h1 {
   position: absolute;
   text-align-last: left;
+  color: #000000;
 }
 
 .Quantity {
-  color: 000000;
+  color: #000000;
 }
 
 </style>
