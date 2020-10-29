@@ -4,7 +4,7 @@
     <div class="hero">
       <HeroImage />
     </div>
-
+    <!-- {{ randomBeers }} -->
     <div>
       <v-carousel
         cycle
@@ -19,7 +19,7 @@
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
           <v-sheet :color="colors[i]" height="100%">
             <v-row class="fill-height" align="center" justify="center">
-              <div class="display-3">Drink {{ slide }}</div>
+              <div class="display-1"> Try {{ randomBeers[i].name }} - {{randomBeers[i].tagline}}</div>
             </v-row>
           </v-sheet>
         </v-carousel-item>
@@ -30,9 +30,17 @@
 
 <script>
 import HeroImage from "@/components/HeroImage.vue";
-
+import { mapState } from "vuex";
 export default {
   name: "Home",
+  computed: mapState(["randomBeers"]),
+  mounted() {
+    if (!this.$store.state.randomBeers.length > 0) {
+      for (let index = 0; index < 3; index++) {
+        this.$store.dispatch("getRandomBeers");
+    }
+  }
+  },
   components: {
     HeroImage,
   },
@@ -46,7 +54,7 @@ export default {
         "light-blue darken-1",
         "deep-purple accent-4",
       ],
-      slides: ["Lager", "Second", "Third", "Fourth", "Fifth"],
+      slides: ["first", "second", "Third"],
     };
   },
 };
