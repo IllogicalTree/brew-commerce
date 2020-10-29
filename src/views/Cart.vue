@@ -1,9 +1,10 @@
 <template>
   <v-container>
+    <h1>Your Cart:</h1>
     <v-layout column>
       <v-flex xs4 v-for='beer in cart' :key='beer.id'>
         <Beer :beer='beer'/>
-        {{beer.quantity}}
+        <p class = "Quantity">{{beer.quantity}}</p>
       </v-flex>
     </v-layout>
   </v-container>
@@ -22,3 +23,16 @@ export default {
   computed: mapState(['cart']),
 }
 </script>
+
+<style scoped>
+
+h1 {
+  position: absolute;
+  text-align-last: left;
+}
+
+.Quantity {
+  color: 000000;
+}
+
+</style>
