@@ -11,10 +11,12 @@
                 <b class = "beerABV">{{beer.ebc}} EBC</b> 
                     <br>
                     <br>
-                <v-btn id="addToCart" medium outlined color="rgb(88, 245, 91)" dark @click="addToCart(beer, 1)">Add to cart </v-btn>
+                <div class = buttons>    
+                <v-btn id="addToCart" medium color = "rgb(88, 245, 91)" outlined dark @click="addToCart(beer, 1)">Add to cart </v-btn>
                     <br>
                     <br>
-                <v-btn id="removeFromCart" medium outlined color="rgb(250, 105, 95)" dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
+                <v-btn id="removeFromCart" medium color = "rgb(250, 105, 95)" outlined dark @click="removeFromCart(beer, 1)">Remove 1 from cart </v-btn>
+                </div>
             </v-col>
             <v-col class = "beerBG" justify="center">
                 <router-link :to='beerLink'>
@@ -51,11 +53,14 @@ export default {
 .vContainer {
     height: 40vh;
     background: rgb(26, 27, 27);
+    max-width: auto;
 }
 
 .vCol {
     height: 35vh;
     background: rgb(31, 32, 32);
+    max-width: auto;
+    overflow: hidden;
 }
 
 .beerName {
@@ -75,7 +80,7 @@ export default {
 }
 
 .beerIMG{
-    max-width: 2rem;
+    max-width: 4rem;
 }
 
 </style>
