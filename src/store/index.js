@@ -11,7 +11,7 @@ export default new Vuex.Store({
     cart: [],
     cartItems: 0,
     filterString: '',
-    randomBeers: [{id: "1", name: "beer1"},{id: "2", name: "beer2"},{id: "3", name: "beer3"}]
+    randomBeers: [],
   },
   mutations: {
     incrementPage (state) {
@@ -19,6 +19,9 @@ export default new Vuex.Store({
     },
     addBeers (state, beers) {
       state.beers = state.beers.concat(beers)
+    },
+    addRandomBeers (state, randomBeers) {
+      state.randomBeers = state.randomBeers.concat(randomBeers)
     },
     clearBeers (state) {
       state.beers = []
@@ -71,6 +74,15 @@ export default new Vuex.Store({
         .then(resp => resp.data)
         .then(beer => {
           commit('addBeers', beer)
+        })
+        .catch(error => console.log(error))
+    },
+    getRandomBeers ({commit}) {
+      axios
+        .get(`https://api.punkapi.com/v2/beers/random`)
+        .then(resp => resp.data)
+        .then(randomBeers => {
+          commit('addRandomBeers', randomBeers)
         })
         .catch(error => console.log(error))
     },
