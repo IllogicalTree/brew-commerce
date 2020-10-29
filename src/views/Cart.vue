@@ -1,12 +1,13 @@
 <template>
   <v-container>
     <h1>Your Cart:</h1>
-    <v-layout column>
-      <v-flex xs4 v-for='beer in cart' :key='beer.id'>
-        <Beer :beer='beer'/>
-        <p class = "Quantity">{{beer.quantity}}</p>
-      </v-flex>
-    </v-layout>
+    <br><br>
+      <v-layout column>
+        <v-flex xs4 v-for='beer in cart' :key='beer.id'>
+          <Beer :beer='beer'/>
+          <p class = "Quantity">{{beer.quantity}}</p>
+          </v-flex>
+        </v-layout>
   </v-container>
 </template>
 
