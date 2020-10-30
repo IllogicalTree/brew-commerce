@@ -44,31 +44,15 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
-  mounted() {
-    // TODO: Big changes required here.. new beer added to state every time beer page viewed.. *facepalm*
-    // Will probably change my approach and not use state for this and instead call api directly here?
-    // this.$store.dispatch('getBeer', {id: this.$route.params.id})
-    // TODO: Fix this horrible hardcoded wait to allow the dispatch to do its thing
-    //setTimeout(() => {
-    // for now lets just pray people don't refresh
-    //this.beer = this.$store.state.beers.find(beer => beer.id == this.$route.params.id);
-    //}, 0)
-  },
   methods: {
     addToCart(beer, quantity) {
-      this.$store.dispatch("addToCart", { beer: beer, quantity: quantity });
+      this.$store.dispatch("addToCart", { beer, quantity });
     },
     removeFromCart(beer, quantity) {
-      this.$store.dispatch("removeFromCart", {
-        beer: beer,
-        quantity: quantity,
-      });
+      this.$store.dispatch("removeFromCart", { beer, quantity });
     },
   },
   computed: {
-    beerLink() {
-      return "/beer/" + this.beer.id;
-    },
     ...mapGetters({
       getBeer: "getBeer",
     }),
