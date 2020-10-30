@@ -19,8 +19,8 @@
                 </div>
             </v-col>
             <v-col class = "beerBG" justify="center">
-                <router-link :to='beerLink'>
-                <v-img class = "beerIMG" :src='beer.image_url'></v-img>
+                <router-link :to="{name: 'Beer', params: {id: beer.id}}">
+                    <v-img class = "beerIMG" :src='beer.image_url'></v-img>
                 </router-link>
             </v-col>
         </v-row>
@@ -37,12 +37,6 @@ export default {
     },
     removeFromCart(beer, quantity) {
         this.$store.dispatch('removeFromCart', {beer: beer, quantity: quantity})
-    }
-  },
-  // TODO: Not happy with this solution, shouldn't need to create a computed prop for this
-  computed: {
-    beerLink() {
-        return '/beer/' + this.beer.id
     }
   }
 }

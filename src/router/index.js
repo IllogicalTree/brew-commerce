@@ -26,6 +26,7 @@ const routes = [
   },
   {
     path: '/beer/:id',
+    name: 'Beer',
     component: Beer,
     props: true
   }
