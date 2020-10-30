@@ -1,32 +1,30 @@
 <template>
-  <v-container class = "vCon">
+  <v-container class="vCon">
     <h1>Your Cart:</h1>
-    <br><br>
-      <v-layout column>
-        <v-flex xs4 v-for='beer in cart' :key='beer.id'>
-          <Beer :beer='beer'/>
-          <p class = "Quantity">Quantity: {{beer.quantity}}</p>
-          </v-flex>
-        </v-layout>
+    <br /><br />
+    <v-layout column>
+      <v-flex xs4 v-for="beer in cart" :key="beer.id">
+        <Beer :beer="beer" />
+        <p class="Quantity">Quantity: {{ beer.quantity }}</p>
+      </v-flex>
+    </v-layout>
   </v-container>
 </template>
 
 <script>
-
-import Beer from '@/components/Beer.vue'
-import { mapState } from 'vuex' 
+import Beer from "@/components/Beer.vue";
+import { mapState } from "vuex";
 
 export default {
-  name: 'Beers',
+  name: "Beers",
   components: {
-    Beer
+    Beer,
   },
-  computed: mapState(['cart']),
-}
+  computed: mapState(["cart"]),
+};
 </script>
 
 <style scoped>
-
 .vCon {
   width: 60vh;
 }
@@ -41,5 +39,4 @@ h1 {
   background-color: rgb(23, 24, 24);
   color: #ffffff;
 }
-
 </style>

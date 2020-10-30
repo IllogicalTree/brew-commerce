@@ -1,10 +1,10 @@
 <template>
   <v-container>
-    <div v-if='!beer'>
+    <div v-if="!beer">
       <h1>Error occured loading beer details, check out our beers page.</h1>
       <v-btn @click="$router.go(-1)">Go back</v-btn>
     </div>
-    <div v-if='beer'>
+    <div v-if="beer">
       <v-img class="beerimg" :src="beer.image_url"></v-img>
       <h1>{{ beer.id }} - {{ beer.name }}</h1>
       <h2>{{ beer.tagline }}</h2>
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
 export default {
   mounted() {
     // TODO: Big changes required here.. new beer added to state every time beer page viewed.. *facepalm*
@@ -70,11 +70,11 @@ export default {
       return "/beer/" + this.beer.id;
     },
     ...mapGetters({
-      getBeer: 'getBeer'}
-    ),
+      getBeer: "getBeer",
+    }),
     beer() {
-      return this.getBeer(this.$route.params.id)
-    }
+      return this.getBeer(this.$route.params.id);
+    },
   },
 };
 </script>

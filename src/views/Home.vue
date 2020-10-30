@@ -19,7 +19,9 @@
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
           <v-sheet :color="colors[i]" height="100%">
             <v-row class="fill-height" align="center" justify="center">
-              <div class="display-1"> Try {{ randomBeers[i].name }} - {{randomBeers[i].tagline}}</div>
+              <div class="display-1">
+                Try {{ randomBeers[i].name }} - {{ randomBeers[i].tagline }}
+              </div>
             </v-row>
           </v-sheet>
         </v-carousel-item>
@@ -38,8 +40,8 @@ export default {
     if (!this.$store.state.randomBeers.length > 0) {
       for (let index = 0; index < 3; index++) {
         this.$store.dispatch("getRandomBeers");
+      }
     }
-  }
   },
   components: {
     HeroImage,
