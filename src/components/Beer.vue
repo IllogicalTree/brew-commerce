@@ -36,7 +36,7 @@
       </v-col>
       <v-col class="beerBG" justify="center">
         <router-link :to="{ name: 'Beer', params: { id: beer.id } }">
-          <v-img class="beerIMG" :src="beer.image_url"></v-img>
+          <v-img class="beerIMG" :src="beer.image_url" />
         </router-link>
       </v-col>
     </v-row>
@@ -49,13 +49,10 @@ export default {
   props: ["beer"],
   methods: {
     addToCart(beer, quantity) {
-      this.$store.dispatch("addToCart", { beer: beer, quantity: quantity });
+      this.$store.dispatch("addToCart", { beer, quantity });
     },
     removeFromCart(beer, quantity) {
-      this.$store.dispatch("removeFromCart", {
-        beer: beer,
-        quantity: quantity,
-      });
+      this.$store.dispatch("removeFromCart", { beer, quantity });
     },
   },
 };
