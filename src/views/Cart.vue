@@ -5,7 +5,7 @@
       <v-layout column>
         <v-flex xs4 v-for='beer in cart' :key='beer.id'>
           <Beer :beer='beer'/>
-          <p class = "Quantity">{{beer.quantity}}</p>
+          <p class = "Quantity">Quantity: {{beer.quantity}}</p>
           </v-flex>
         </v-layout>
   </v-container>
@@ -29,7 +29,6 @@ export default {
 
 .vCon {
   width: 60vh;
-  
 }
 
 h1 {
@@ -39,7 +38,8 @@ h1 {
 }
 
 .Quantity {
-  color: #000000;
+  background-color: rgb(23, 24, 24);
+  color: #ffffff;
 }
 
 </style>
