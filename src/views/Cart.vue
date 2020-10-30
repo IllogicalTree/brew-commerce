@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class = "vCon">
     <h1>Your Cart:</h1>
     <br><br>
       <v-layout column>
@@ -26,6 +26,11 @@ export default {
 </script>
 
 <style scoped>
+
+.vCon {
+  width: 60vh;
+  
+}
 
 h1 {
   position: absolute;
