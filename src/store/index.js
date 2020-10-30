@@ -55,12 +55,12 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    getBeers ({commit}, filterString) {
+    getBeers ({commit, state}, filterString) {
       if (!filterString) {
-        filterString = this.state.filterString
+        filterString = state.filterString
       }
       axios
-        .get(`https://api.punkapi.com/v2/beers?page=${this.state.page}${filterString}`)
+        .get(`https://api.punkapi.com/v2/beers?page=${state.page}${filterString}`)
         .then(resp => resp.data)
         .then(beers => {
           commit('incrementPage')
