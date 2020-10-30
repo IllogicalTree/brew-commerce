@@ -64,13 +64,6 @@ export default new Vuex.Store({
         })
         .catch(error => console.log(error));
     },
-    getBeer({ commit }, { id }) {
-      axios
-        .get(`https://api.punkapi.com/v2/beers/${id}`)
-        .then(resp => resp.data)
-        .then(beer => commit("addBeers", beer))
-        .catch(error => console.log(error));
-    },
     getRandomBeers({ commit }) {
       axios
         .get(`https://api.punkapi.com/v2/beers/random`)
