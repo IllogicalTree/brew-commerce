@@ -100,6 +100,9 @@ export default new Vuex.Store({
       dispatch('getBeers', filterString)
     }
   },
+  getters: {
+    getBeer: state => id => state.beers.find(beer => beer.id == id)
+  },
   modules: {
   }
 })
