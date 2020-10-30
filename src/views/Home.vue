@@ -19,7 +19,7 @@
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
           <v-sheet :color="colors[i]" height="100%">
             <v-row class="fill-height" align="center" justify="center">
-              <div class="display-1">
+              <div class="display-1" v-if='randomBeers[i]'>
                 Try {{ randomBeers[i].name }} - {{ randomBeers[i].tagline }}
               </div>
             </v-row>
