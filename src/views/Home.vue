@@ -33,13 +33,15 @@
 <script>
 import HeroImage from "@/components/HeroImage.vue";
 import { mapState } from "vuex";
+
 export default {
   name: "Home",
   computed: mapState(["randomBeers"]),
-  mounted() {
+  async mounted() {
     if (!this.$store.state.randomBeers.length > 0) {
       for (let index = 0; index < 3; index++) {
-        this.$store.dispatch("getRandomBeers");
+        this.$store.dispatch("getRandomBeers")
+        await new Promise(res => setTimeout(res, 1500))
       }
     }
   },
