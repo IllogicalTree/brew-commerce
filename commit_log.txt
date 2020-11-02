@@ -1,0 +1,962 @@
+commit 83cba25dc019922f574416662408f4f2fa324f34
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Nov 2 09:23:50 2020 +0000
+
+    adds 1.5 sec delay between calling beers
+
+commit 971c27fc28d23e413de718912a217f6e5718d9f8
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 20:30:54 2020 +0000
+
+    terrible fix but sorts error failing to read name
+
+commit c8aaf9775bcbc0e20ad54b3f457b9958fa82e073
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 20:19:15 2020 +0000
+
+    adds message for empty cart
+
+commit 38b5e8ad07694a06b2b2a569e1b07a0d22cb0067
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:45:04 2020 +0000
+
+    removes unused property and sorts formatting
+
+commit f071173602e032e51ff3904da812637b4c56bb46
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:42:35 2020 +0000
+
+    removes unused method
+
+commit a063254b6933b5205a322ae3d06063b6640f1684
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:34:52 2020 +0000
+
+    removes unneeded keys from object
+
+commit 3f2a6bf771b1f5833ef384139dbf566ebee9fc46
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:33:35 2020 +0000
+
+    removes unused component
+
+commit 6e8962781ee60f6902ceb9f7c36f4cfe7f4e66e4
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:28:21 2020 +0000
+
+    formatting/ linting changes
+
+commit 56ab81fae923b1a97070a3023144000363d11ae8
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:26:01 2020 +0000
+
+    linting and tidy up
+
+commit b3bccd2d892b2ae8f99ec2a5268360a005641b68
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:15:21 2020 +0000
+
+    makes use of named route for beer view
+
+commit 4a04ac4dcc91c151d50116018a1f0d482b8f95ea
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:08:58 2020 +0000
+
+    displays error to use if beer fails to load
+
+commit 5dde87c77500c66132b3649d9622f5360f5a464c
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 19:00:40 2020 +0000
+
+    removes "this" usage
+
+commit 359f24dbf4617cdf791f114663d1d703e7bc5990
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Fri Oct 30 18:45:48 2020 +0000
+
+    implements getter for beer view
+
+commit 208af491e3d24b1a1e777678878756d418f117db
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Fri Oct 30 00:14:42 2020 +0000
+
+    Added quantity below product in cart.vue
+
+commit b2ac3d5f40bd660d93d218fd01129274b931efb6
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Fri Oct 30 00:01:39 2020 +0000
+
+    added width of 60vh to v-Container of products inside cart.vue
+
+commit 0c253594b5a441214e70cae21dd82f40219cc4e4
+Merge: e443f92 4d04438
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 22:52:56 2020 +0000
+
+    Merge branch 'master' of bitbucket.org:cimacintosh/vue-team-4
+
+commit e443f92c4b8b14b6bb4a60c5829172ded9a53970
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 22:52:37 2020 +0000
+
+    Changed the header colour in cart.vue to #000000 (Black)
+
+commit 4d044383b97e82d5b43d5ac1bb99bb16f712d097
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 29 22:30:39 2020 +0000
+
+    Home carousel now shows 3 random beers
+
+commit 35ce6ecc046c6fa5fc7fb596324884c352407f4e
+Merge: b4897d6 3f21671
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 29 22:14:50 2020 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit b4897d61f9e911696507f1ec5b8a795b7b033c12
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 29 22:14:33 2020 +0000
+
+    carousel shows random beer. Need to add more randoms to array .
+    
+    semi-functional random beer selector.
+
+commit eacb265a8f29b67891189f6970231ae47e778891
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 29 22:12:37 2020 +0000
+
+    Tidy up and add image and buttons
+    
+    Add image and buy remove buttons
+
+commit 3f21671a51d6bae8657550cdf3058c0c2e513a3c
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 22:12:16 2020 +0000
+
+    Added 2 line breaks between h1 tag and v-container for products
+
+commit 6954ff0ae9545c0c0699504a4cc2a37a687b7789
+Merge: b8759c8 567e0a6
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 21:50:16 2020 +0000
+
+    Merge branch 'master' of bitbucket.org:cimacintosh/vue-team-4
+
+commit b8759c8356bdb35926d7e9d054a8d979b05191ab
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 21:49:03 2020 +0000
+
+    Added h1 for Your Cart: with allignment to the left inside cart.vue
+
+commit 567e0a6d2c60d1c14fb82b82dceecc842f84d657
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 29 21:13:42 2020 +0000
+
+    Added get and add random beer to store
+    
+    for use on home
+
+commit d22d6122351966be9feb907a3f2880ac03365751
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 20:52:55 2020 +0000
+
+    Fixed the overlapping of elements
+
+commit 9b3609e4b579c56705468574609bc1d6a860064e
+Merge: 67b2366 7918a5d
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 29 18:38:07 2020 +0000
+
+    Merge branch 'master' of bitbucket.org:cimacintosh/vue-team-4
+
+commit 67b236682edf9898d25eb37c4b05b188906b7ea0
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 29 18:36:10 2020 +0000
+
+    fixes issue with navigation drawer
+
+commit 7918a5d2453bafa2e10b266c2f8797e00a0b8269
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Thu Oct 29 18:14:15 2020 +0000
+
+    Removed pushing beer image from top and left while reverting to original size of 2rem
+
+commit ea1eb58cd442e838e1a72c38716cfa1817950098
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:47:54 2020 +0000
+
+    Positioned beer images inside beerIMG styling to match center for most cases
+
+commit 17302e353a302d97c40d72aa6fcb3a58f5455d70
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:40:36 2020 +0000
+
+    Changed the width size of 2rem to 4rem inside beerIMG style
+
+commit e7ab5cc248772e5ee246c40e84ce664dc9213d23
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:31:35 2020 +0000
+
+    Added beerIMG class to the v-img tag inside products page in order to move styling there
+
+commit 73f27757239adee41e0cf08c77d262b7e762de1d
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:27:24 2020 +0000
+
+    Changed the height of vContainer from 50vh down to 40vh
+
+commit a9b18ace0da571d840b3df23a1e4c5e1e0453c19
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:26:14 2020 +0000
+
+    Added height to vCol to remove any overlap
+
+commit 16b790a5d4193c63adfeda0b405ec429765a9a46
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Wed Oct 28 02:21:32 2020 +0000
+
+    Added height to vcontainer to remove the white gaps in between beers
+
+commit f2ad49c48d4db8dc0263bb9c43ad8105b69bc228
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Wed Oct 28 00:08:12 2020 +0000
+
+    Hardcoded some state data for randomBeers
+    
+    Experimenting with random beer selection and display
+
+commit 8bd96640d68df807b6b20015caeb7ed337436099
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Tue Oct 27 22:30:15 2020 +0000
+
+    Add cartitem counter to 'view cart' button on home
+    
+    Wasn't planned.  I was practicing using the vuex store
+
+commit 2308290f65d5c1b1852205e5909b37d164803b94
+Merge: 8c228f7 4542241
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 18:06:54 2020 +0000
+
+    Merge branch 'master' of bitbucket.org:cimacintosh/vue-team-4
+
+commit 8c228f72e226ec5634479f5940f714f469940e96
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 18:06:43 2020 +0000
+
+    fixes issue where filters ignored when scrolling
+
+commit bdc63bbbd8f5c8eee5726d80adbc8b576f0e9fed
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 18:03:52 2020 +0000
+
+    adds label to sliders and wraps into cols
+
+commit 4542241fba830c728d635113ea51776dcee5c875
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Tue Oct 27 17:56:12 2020 +0000
+
+    Add carousel to home
+    
+    Needs customised
+
+commit c14299ad6ed988c78ec480526b6666a14e6e9072
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:54:13 2020 +0000
+
+    removes need for apply filter btn
+
+commit 8c3a9403c91c3ad2599686de35ec015ba8d69cb3
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:53:33 2020 +0000
+
+    adds sliders for ibu and ebc
+
+commit 5fc061041420e3b9e97bb3ed2cec7c25671e86d6
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:53:04 2020 +0000
+
+    adds label for ibu and ebc
+
+commit 17806d0d0659deee77b5a444ad704da401087d93
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:18:20 2020 +0000
+
+    adds check for when no filter string provided
+
+commit ce96f509bfad08e4f131bf09d790ee42b6177052
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:17:47 2020 +0000
+
+    adds abv filtering
+
+commit 4dfab6e0d942b61aafb639e8f8192af1a32ec433
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 17:14:23 2020 +0000
+
+    adds filter to beers page
+
+commit 89c702e789b05c32d7eb3020445c77dd2215efe8
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 16:39:30 2020 +0000
+
+    adds back button
+
+commit 5d12fbe6fd8f996632dc79bc916c58ed273cc358
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 16:31:58 2020 +0000
+
+    refactors appbar to own component
+
+commit a54aac6e5945b9f79a3bc587f0846e22d895cc37
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 16:31:38 2020 +0000
+
+    adds navigation drawer
+
+commit 56cc4da3ce62401af9ce6488db740f7f45a0cd36
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 27 15:28:57 2020 +0000
+
+    half fixes issue of duplicate beers
+
+commit ae27ec32b48363efcd588d53be34b678d4101428
+Merge: a8f6d6a 1f07559
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 23:45:34 2020 +0000
+
+    Merge branch 'master'
+
+commit a8f6d6a8cb3ea67d2c801dbcd2b60c62ea3f1cc9
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 23:40:52 2020 +0000
+
+    adds todo message to me to address later
+
+commit 60c20254d9a1e3418ed419e5909a7a81b61d939c
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 23:29:43 2020 +0000
+
+    please forgive me for this hack...
+
+commit 1f07559c59be1597502c75010ccff8dab58e7bd4
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 23:29:20 2020 +0000
+
+    Cleaned the code by moving all style within elements under style tag
+
+commit 02e41c2c9178188f42eb39e6e215582806b48fd2
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 23:27:48 2020 +0000
+
+    adds function to get single beer
+
+commit f725273ef3841464cf7cab4407e149312c547dae
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 22:24:23 2020 +0000
+
+    fixes issue: beers being fetched every load
+
+commit 5751bc627e9614baae454428df22554916d8fec7
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 22:23:56 2020 +0000
+
+    adds route to beer pages
+
+commit 4dd380fae96bb794b4e535cac1ee5b100a150952
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 22:23:30 2020 +0000
+
+    adds link to beer component
+
+commit 58c625e7f3cb76b03f34d801ee97691f54a8226f
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Mon Oct 26 22:23:18 2020 +0000
+
+    adds beer page
+
+commit 3ceabbc0159f476d12c40f84a0ee8155c3917fbc
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:39:06 2020 +0000
+
+    Added spacing between both cart buttons inside products
+
+commit de4d818e6ee3f73677174dbe1eb47d43f40c29fc
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:32:16 2020 +0000
+
+    Added temporally spacing around ABV in products for neater design
+
+commit dbbaa9c8d3c2902af9a69e7752c13dd53da82d49
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:23:37 2020 +0000
+
+    Changed color of ABV for beers in products to light gray
+
+commit 5d610cf06131b3b90fb5b5208c8f4896aa23e46b
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:21:43 2020 +0000
+
+    Changed color of beer description in products to light grey
+
+commit 1c5f9c10306e71213a7b16ad34224b3a60429802
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:20:14 2020 +0000
+
+    Changed color of beer names in products to white
+
+commit ba30842fbd6a40de7c2b18df52c27fbacf53c714
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:15:04 2020 +0000
+
+    Changed color of remove from cart button in products to red
+
+commit 8b439cb4a4a560000f14ee6234989ae15652065a
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:13:22 2020 +0000
+
+    Changed color of add to cart in products to green
+
+commit ddb6364af5f99ff40cafe1520c9d9ef63f86c34c
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:08:38 2020 +0000
+
+    Changed color for background of beers in products
+
+commit fc98b52d078e28170eb7473bca76c8c82334249e
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 20:06:41 2020 +0000
+
+    Changed v-container color in products to dark grey
+
+commit c95dcbada6506548881025918ab2182c35885ccc
+Author: MarcinWaskowiak <15010786@uhi.ac.uk>
+Date:   Mon Oct 26 19:59:01 2020 +0000
+
+    Changed v-col color in products to dark grey
+
+commit c8ba807e1fdc324d2a03256c361e8f342d02430f
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 26 10:03:05 2020 +0000
+
+    Add hero image component to home
+    
+    Add a hero image component and import in to Home.view
+
+commit 70689b8416d9367b9c58582e64d1966c712a32d3
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Sun Oct 25 20:09:08 2020 +0000
+
+    add hero image file
+    
+    heroimage.jpg to src\assets
+
+commit ae459f361558f4e5237f7eb86885e724c7653f50
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 19:18:51 2020 +0000
+
+    fixes negative values
+
+commit 6bd747dd2709f349fd1f864a4e4024174389080d
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:40:32 2020 +0100
+
+    adds cart item counter
+
+commit 5a7f4aa718bbbf7ceae8fd797779e6608981e56f
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:40:01 2020 +0100
+
+    shows number of items in cart
+
+commit d61608d938c0f8d3d7b6b0234671fab8f5fca616
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:26:19 2020 +0100
+
+    state should not be modified directly
+
+commit 77966ce7f1b6d2eaf84732ec6ceaace6c85ea376
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:25:14 2020 +0100
+
+    removes items with 0 quantity from cart
+
+commit ada6b65fa18add9a677c80f275011429610be73f
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:24:47 2020 +0100
+
+    adds remove from cart button
+
+commit bdb332914bb7dd11c00d1ba7a578d86adafb4df1
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:24:39 2020 +0100
+
+    adds remove from cart functionality
+
+commit 4debd49538545c98742dbdb552044c8e40e9efa9
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:11:20 2020 +0100
+
+    removes unused mutation
+
+commit faaee1979767c0010689e5022e060782b94e8ca3
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:10:28 2020 +0100
+
+    fixes issue footer not visible on products view
+
+commit fba4bdb41ef9bcc5719eb7f7e2e7e9e67582e2f6
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:01:31 2020 +0100
+
+    changed to display cart data
+
+commit 926fed4174da7ae1e75951fabdc8b6a4000ee932
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:01:07 2020 +0100
+
+    adds functionality to add to cart button
+
+commit 6bfc7bd2bd4cc3f1ab0d0c3a1fc7740c39d6030d
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sun Oct 25 00:00:40 2020 +0100
+
+    adds ability to add to cart
+
+commit 916465f2ba846c57276fe2fa3444aa225f8e4582
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 23:02:10 2020 +0100
+
+    fixes issue where scroll detected on all routes
+
+commit cc6b7636b06deb0aa88493dacdfb4835af2d991c
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:59:06 2020 +0100
+
+    removes unused code
+
+commit ce44589ed01dddd783a56a03e84d76c4dcf8bffa
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:57:54 2020 +0100
+
+    moves disclaimer from home page to footer
+
+commit f79c84083526e23617d4e14a42d685b72e69c9ea
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:54:04 2020 +0100
+
+    adds basic cart page
+
+commit fc3e55ba093d80bc889372a7074d31823b72aa26
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:52:46 2020 +0100
+
+    removes default router links and styles
+
+commit a8ce44ac78d5ce0bd4b82238255350e5dc00a328
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:52:14 2020 +0100
+
+    adds yarn lock file
+
+commit 8c79210b21be3be9cc0cdbc36b9bb8b5638aa6f6
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:06:02 2020 +0100
+
+    adds cart route
+
+commit af7f3aa46599c8bfed49b9c01c519e3f5c423ef4
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:05:51 2020 +0100
+
+    removes unused view
+
+commit bf309918856d2a6c26cfc2959ed1d590dd97a644
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 22:01:10 2020 +0100
+
+    fixes bad merge of readme
+
+commit 10ba19eb5c1d9de38e86bfd7ba4e1a41021c8faf
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Sat Oct 24 16:19:33 2020 +0100
+
+    removes unnessessary file
+
+commit 2184f792ff9258149f3e1bb4527dd91169365990
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 22:53:58 2020 +0100
+
+    removed as not needed
+    
+    typo in extension name (.yaml instead of .yml!)
+
+commit b1058cd94f20b3c778615d334d31ac5ca0feae80
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 22:47:11 2020 +0100
+
+    Small edit to abv
+
+commit a07e96192ea6affbf36b8007a2f26ae7bb364da5
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 22:15:48 2020 +0100
+
+    Minor change to abv
+
+commit 165a8d1b924c740fc914ef41c1cea241e36efff4
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 22:06:56 2020 +0100
+
+    Added ABV to thumbnail desc
+
+commit b158dc9f8cca48eb1a0be8ec6e5a42c61e66173e
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 21:58:10 2020 +0100
+
+    Resize 'add to cart' button
+
+commit d31a89998e0055de02f398f6db701dd55d7669ca
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 21:50:53 2020 +0100
+
+    Add 'Add to cart' button
+    
+    For each product - non functional
+
+commit 02334cb6e96d922de07a592a03569d1fcf146bf0
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 19:44:40 2020 +0100
+
+    Remove _blank tags
+    
+    To stop links opening in new windows
+
+commit 7484f8c23d6ee829dcfde537b85eca0b19495b8c
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 19:33:09 2020 +0100
+
+    Add functionality to toolbar buttons
+
+commit e211a18ad74df8e74ed2005e9ec6b3fcaec53938
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 19:14:25 2020 +0100
+
+    move existing router-links in to main
+
+commit 5d91eb42ecd7796e5b1d6c24a30c054a9811eaeb
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 19:11:38 2020 +0100
+
+    add home button to toolbar
+    
+    not yet functional
+
+commit 897b02f57277635a984f3909d9ea447f8f1c2a45
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 18:58:55 2020 +0100
+
+    Fix path
+    
+    logo path incorrect and causing build errors
+
+commit a8c75b9d0695e21232b4065916a4d46aa551e1d4
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 18:52:41 2020 +0100
+
+    checking logo path
+
+commit b9e6df6ee81d89f1cdc18f2a3bc642f851b0ff6a
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 18:37:48 2020 +0100
+
+    change filepath to logo from cdn to assets
+
+commit 2c5836bf30d95d741a575b4cdb964cd153522e1e
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 18:36:46 2020 +0100
+
+    Add logo text for tool bar
+    
+    logo.png
+
+commit 2d6eccd454f8e97f164c672f287752a2b7886078
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 18:24:59 2020 +0100
+
+    Toolbar fixed
+
+commit 1dc80d07c555b71c7eb439aa1aa8edea12f64161
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 17:56:37 2020 +0100
+
+    Attempting to troubleshoot toolbar
+    
+    Toolbar not displaying as expected.
+
+commit d6bd9b929df1531be9682da8cd599307185a419f
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 17:40:00 2020 +0100
+
+    add <v-main> tags
+    
+    and route-rview
+
+commit 868560f35db8f89eeb8c30fb1bc3d35b852c671f
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 13:47:11 2020 +0100
+
+    Add a toolbar at top of page
+    
+    Navigation toolbar
+
+commit 366fb8cbc9da18bc4931cd5ec1bdcf53ca79e6fe
+Merge: 6f3357b c507910
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 10:36:39 2020 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c507910f3ab3fb841d9feeacac2f05ba91d1b161
+Merge: d42774f acbd428
+Author: Jordan <jordan@jordannewlands.com>
+Date:   Thu Oct 22 10:23:26 2020 +0100
+
+    Merge branch 'master' of bitbucket.org:cimacintosh/vue-team-4
+
+commit 6f3357b9aa45de9286bae17f5d6a95ed29291ed5
+Merge: bff6e8b acbd428
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Thu Oct 22 10:19:27 2020 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit bff6e8badbacf77c6602eae88e35c89747800c5d
+Merge: 1960148 4e7f852
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 08:54:49 2020 +0000
+
+    Merged in infinite-scrolling (pull request #1)
+    
+    Adds infinite scrolling functionality
+
+commit d42774fc28790ae3dcd3bbc4fe0a2fa4999de54f
+Merge: 47438cb 4e7f852
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 10:15:18 2020 +0100
+
+    Merge branch 'infinite-scrolling'
+
+commit 47438cbf5e53a54d394b5eb677b5793f0d7ae1a2
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 10:12:38 2020 +0100
+
+    adds legal disclaimer
+
+commit acbd42850d68a8890fdd1cd0fb9e0c1c7f41691a
+Merge: 1960148 4e7f852
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 08:54:49 2020 +0000
+
+    Merged in infinite-scrolling (pull request #1)
+    
+    Adds infinite scrolling functionality
+
+commit 4e7f85299450cc2cfc9750b3fb5843dd93b74c34
+Merge: 26aa54b 1960148
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 09:53:20 2020 +0100
+
+    Merge branch 'master' into infinite-scrolling
+
+commit 26aa54b8f8e450990ed28d1ce380677687a2cef8
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 09:17:11 2020 +0100
+
+    adds cloudant manifest
+
+commit c917f9fb3fc6895528633c1ff5610ddaea1ca664
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 09:17:03 2020 +0100
+
+    fixes error where props set twice
+
+commit 6a69d0350cf0c5816bb51ecfb6fda8c030b53c16
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Thu Oct 22 01:15:27 2020 +0100
+
+    fixes package json
+
+commit fe39c361de6a1816780cc79804773acc572c7672
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 21:38:02 2020 +0100
+
+    adds axios
+
+commit 88a6a006d010f7fa612d2e92f93d0eb67122fe98
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 21:24:53 2020 +0100
+
+    displays id of beer
+
+commit 22d57f049572b0d7efd4f3b4dc613577e932be95
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 21:24:34 2020 +0100
+
+    replaces button with infinite scrolling
+
+commit d6f6eab2d2c2fe4aa7f2e1959220454542c4ad04
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 20:45:36 2020 +0100
+
+    removes printing of beer object
+
+commit 5e81e48442835f42ef0e3c4e9ba0839fafba8d7c
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 20:44:12 2020 +0100
+
+    beers shown in grid instead of list
+
+commit 668171cec791aa994c95dd2928274300262a7efc
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 20:43:56 2020 +0100
+
+    adds styling
+
+commit 30871446597b198f169abc9ce3f20dc7c2108661
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 20:43:15 2020 +0100
+
+    vuetify apps must be contained within v-app
+
+commit e98660410e5c1d43f05dcee680d1fe2f6acffa71
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:54:19 2020 +0100
+
+    adds functionality to fetch real data
+
+commit b15ae259e5c355a4a29f0144b1b2a967ff46f3bd
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:49:11 2020 +0100
+
+    removes default hello world component
+
+commit 53d96c86382863d4ed688328a000219ae7fe468b
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:47:47 2020 +0100
+
+    removes unused about view
+
+commit 5ce9101fe1f47d1d0ce7d0ce32f2c5a710aad3ab
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:47:37 2020 +0100
+
+    adds beers view
+
+commit 553f79d4996866ef6645e99ed8189500d249cfb9
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:47:02 2020 +0100
+
+    replaces about route with beers route
+
+commit 740be80e622b57aa096d4c388072fa12ae1c2ad6
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:46:26 2020 +0100
+
+    adds beers to state
+
+commit 59bb9d68314b0dc5f0ed510de6f9335e3eef5ea8
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:45:51 2020 +0100
+
+    adds basic beer component
+
+commit 6a82588cff304ff71a5b7d2f5fc0accfe10610f9
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:35:01 2020 +0100
+
+    adds vuetify
+
+commit f27d8b31a8f029aba09a2d1d6fc9665c77290cea
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:29:10 2020 +0100
+
+    adds staticfile required for cloud foundry
+
+commit a2f93c8b27a1a0aed579495753616769a12904f1
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Wed Oct 21 19:27:47 2020 +0100
+
+    init
+
+commit 19601481945a8f37bec6f1c7dd86e4e014324b53
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Tue Oct 20 16:06:10 2020 +0100
+
+    Added staticfile and reverted mode to 'history'
+    
+    Another attempt to fix route issue
+
+commit 952a7c5e6983b46c28923ab7be30370a3595e773
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Tue Oct 20 15:39:01 2020 +0100
+
+    Attempt to fix route issue
+    
+    Changed from 'history' to 'hash' mode.
+
+commit 2a1dcbac91b1d20ee6ba244024275a4cc10467c3
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 20 13:23:46 2020 +0100
+
+    reverts change to routing that didn't fix
+
+commit f5b3a328b2e39e8b4c85ade223968a30870fd777
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 20 13:12:48 2020 +0100
+
+    should fix issue with routing
+
+commit a2ad6a46d74b34e668cfe33fcb7d9f7df2f4df7a
+Author: JORDAN NEWLANDS <15027887@uhi.ac.uk>
+Date:   Tue Oct 20 12:21:00 2020 +0100
+
+    test commit
+
+commit 49c28b48a7f37e820da3be3f0d6fb56341c5855e
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 23:17:16 2020 +0100
+
+    edit manifest
+    
+    Change name
+
+commit 9d2984acadfce330d8344342282225c24bc59e86
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 22:55:15 2020 +0100
+
+    push to test pipeline
+
+commit 837f263791b55f2130dce102cd824cd83d314a1d
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 22:24:38 2020 +0100
+
+    Fix indentation in YAML.
+
+commit dfa4a2a1aa7fe34d748eb468436850ffba136c2a
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 22:18:30 2020 +0100
+
+    Initial commit
+
+commit 4ffd4cc29af95ef1b6b40540276f4e1089d81a56
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 16:45:10 2020 +0100
+
+    Test commit and push
+
+commit 528b149771b776e16ae230db5bbc448b7903aa57
+Author: CALUM MACINTOSH <20014543@uhi.ac.uk>
+Date:   Mon Oct 19 15:06:15 2020 +0000
+
+    Initial commit
